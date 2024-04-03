@@ -1,0 +1,63 @@
+14:26:42.493 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+14:26:55.998 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+14:27:00.340 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 dodał: 1 sztuk produktu: MAG Z590 TOMAHAWK WIFI do koszyka
+14:27:02.729 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 dodał: 2 sztuk produktu: Core i5-10400F, 2.9 GHz, 12 MB, BOX do koszyka
+14:28:58.380 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+14:39:50.847 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+14:40:02.515 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+14:40:04.915 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 wylogowal sie
+14:40:14.910 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+14:40:54.494 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 uzył kodu rabatowego o id: 5
+14:40:55.110 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 złożył nowe zamówienie o id: 3
+14:41:08.869 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+14:47:30.069 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+14:47:43.769 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+14:47:48.973 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 dodał: 3 sztuk produktu: M185 szara do koszyka
+14:47:52.168 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 dodał: 3 sztuk produktu: Z150 (980-000814) do koszyka
+14:48:56.898 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+14:49:47.633 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+14:49:59.939 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+14:50:22.292 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+14:56:25.603 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+14:56:37.084 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+14:57:09.779 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:06:15.513 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:06:28.495 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:07:54.007 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:09:09.893 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:09:21.145 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:12:19.081 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:12:25.786 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:12:39.192 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:13:47.976 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:13:57.016 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:14:10.003 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:14:55.662 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:17:15.915 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:17:28.733 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:17:33.223 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:17:54.736 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:18:05.691 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+15:18:26.555 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+15:36:07.455 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+15:36:20.083 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+15:36:26.089 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 usunał pracownika o adresie mailowym: marian.blicharski@gmail.com
+15:36:40.379 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 wylogowal sie
+15:36:59.785 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+15:37:11.192 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował nazwe produtu o ID: 9 z nazwy: M185 szara na nazwe: M185 szara
+15:37:11.192 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował nazwe producenta produktu o ID: 9 z nazwy: Logitech na nazwe: Logitech
+15:37:11.193 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował cene produtu o ID: 9 z ceny: 49.99 zł na cene: 49.99 zł
+15:37:11.193 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował liczbe dostepnych sztuk produtu o ID: 9 z liczby: 19 na liczbe: 10
+15:37:11.194 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował date produkcji produtu o ID: 9 z daty: 2020-01-01 na date: 2020-01-01
+15:37:11.195 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 zaktualizował kategorie produtu o ID: 9 z kategori: myszka na kategorie: myszka
+15:37:33.605 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 usunał pracownika o adresie mailowym: marian.blicharski@gmail.com
+15:37:47.101 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 wylogowal sie
+15:38:12.731 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Zarejestrowal sie nowy uzytkownik o adresie mailowym: karolprzygodaprivate@gmail.com
+15:38:23.964 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 6 zalogowal sie
+15:38:38.344 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 dodał: 9 sztuk produktu: P300 1 TB 3.5" SATA III do koszyka
+15:39:14.008 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 uzył kodu rabatowego o id: 5
+15:39:15.596 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 złożył nowe zamówienie o id: 4
+15:39:24.218 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 anulowal zamowienie o ID: 4
+15:39:35.376 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 dodał porokt o id: 9 do listy zyczen
+15:39:46.235 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 6 wylogował się 
+15:39:49.838 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta

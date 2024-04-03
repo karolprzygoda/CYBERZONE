@@ -1,0 +1,44 @@
+00:09:09.469 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+00:09:19.498 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+00:09:37.495 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+00:31:50.057 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+00:32:01.310 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+00:32:29.155 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Administrotr o ID: 1 wylogowal sie
+00:32:39.608 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+00:32:55.889 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+00:41:00.427 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Aplikacja zostala zamknieta
+00:42:08.092 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+00:42:13.119 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+01:18:07.574 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+01:18:09.618 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+01:46:00.431 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+01:46:02.748 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:01:19.496 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:01:22.133 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:10:26.795 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:10:29.931 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:15:47.877 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:15:49.480 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:19:13.676 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:19:15.568 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:23:41.110 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:23:42.957 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:45:26.027 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:45:31.486 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:47:28.700 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:47:30.537 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:58:19.701 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:58:22.286 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+02:58:43.452 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+02:58:45.095 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+03:05:48.135 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+03:05:53.863 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+03:11:31.559 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+03:11:33.060 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+03:18:55.751 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+03:18:58.389 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+03:19:03.776 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+03:19:15.179 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+03:19:17.511 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+03:32:44.968 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+03:32:46.400 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta

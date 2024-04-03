@@ -1,0 +1,18 @@
+17:26:46.301 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+17:32:26.781 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+17:32:52.822 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+18:17:52.554 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+18:18:27.705 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+20:22:27.847 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+20:22:38.087 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+20:22:48.496 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Użytkownik: 5 dodał: 3 sztuk produktu: Z150 (980-000814) do koszyka
+20:23:03.034 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+21:07:36.659 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+21:07:38.509 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+21:09:50.677 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+21:09:52.637 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+21:39:44.718 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+21:39:54.520 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 5 zalogowal sie
+21:39:58.726 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+21:44:14.209 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikacje
+21:44:15.787 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta

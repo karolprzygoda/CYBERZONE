@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1200.0" styleClass="stackStyle" stylesheets="@../../../dashBoardDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dekstopshopproject.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="438.0" layoutY="115.0" prefHeight="630.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+               <top>
+                  <AnchorPane prefHeight="0.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane prefHeight="20.0" prefWidth="1200.0" styleClass="top-form" stylesheets="@../../../dashBoardDesign.css">
+                           <children>
+                              <ImageView fitHeight="28.0" fitWidth="27.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="3.0">
+                                 <image>
+                                    <Image url="@../../../grafiki/cpu-Icon.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="36.0" layoutY="10.0" text="Panel Administratora CYBERZONE" />
+                              <Button fx:id="closeBtn" layoutX="1168.0" layoutY="4.0" mnemonicParsing="false" onAction="#close" prefHeight="31.0" prefWidth="31.0" styleClass="close" stylesheets="@../../../loginDesign.css" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="CLOSE" size="18.0" text="" />
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="minBtn" layoutX="1129.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="31.0" prefWidth="32.0" styleClass="minimize" stylesheets="@../../../loginDesign.css" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="WINDOW_MINIMIZE" size="16.0" wrappingWidth="16.0" />
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <left>
+                  <AnchorPane prefHeight="610.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="131.0" fitWidth="125.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../grafiki/icon-admin.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust brightness="1.0" />
+                           </effect>
+                        </ImageView>
+                        <Label layoutX="52.0" layoutY="133.0" styleClass="hello" stylesheets="@../../../dashBoardDesign.css" text="Witaj," textFill="#fffefe">
+                           <font>
+                              <Font name="Lato Semibold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameLabel" alignment="CENTER" layoutY="173.0" prefHeight="58.0" prefWidth="190.0" styleClass="hello-name" stylesheets="@../../../dashBoardDesign.css" text="label" textFill="WHITE">
+                           <font>
+                              <Font name="Lato Semibold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="homeBtn" layoutX="15.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Home" textAlignment="CENTER" textFill="WHITE">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="30" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Line endX="100.0" layoutX="82.0" layoutY="230.0" startX="-64.5" stroke="WHITE" strokeWidth="2.0" />
+                        <Button fx:id="itemBtn" layoutX="15.0" layoutY="291.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Produkty" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="LAPTOP" size="30.0" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="customerBtn" layoutX="15.0" layoutY="341.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Klienci" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="30" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="orderBtn" layoutX="15.0" layoutY="391.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Zamówienia" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="CART_ARROW_DOWN" size="30" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="employeBtn" layoutX="15.0" layoutY="441.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Pracownicy" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" size="30" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="logOutBtn" layoutX="15.0" layoutY="538.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="170.0" styleClass="logoutbtn-fill" stylesheets="@../../../dashBoardDesign.css" text="Wyloguj" textAlignment="RIGHT">
+                           <graphic>
+                              <Button mnemonicParsing="false" styleClass="logoutbtn">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" size="20" />
+                                 </graphic>
+                              </Button>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="discountBtn" layoutX="15.0" layoutY="491.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="40.0" prefWidth="170.0" styleClass="side-buttons" stylesheets="@../../../dashBoardDesign.css" text="Rabaty" textAlignment="CENTER">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="TAG" size="30" />
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="left-form" />
+                        <String fx:value="shadow" />
+                     </styleClass></AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="homePane" prefHeight="600.0" prefWidth="990.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AnchorPane layoutX="53.0" prefHeight="180.0" prefWidth="280.0" styleClass="nav-form" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="ID_CARD" layoutX="14.0" layoutY="115.0" size="70" wrappingWidth="82.28571319580078" />
+                                          <Label layoutX="62.0" layoutY="146.0" styleClass="top-text" stylesheets="@../../../dashBoardDesign.css" text="Liczba Pracowników" textFill="WHITE" />
+                                          <Label fx:id="employeNumber" alignment="TOP_RIGHT" layoutX="111.0" layoutY="72.0" prefHeight="17.0" prefWidth="155.0" styleClass="numbers" stylesheets="@../../../dashBoardDesign.css" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="711.0" layoutY="1.0" prefHeight="180.0" prefWidth="280.0" styleClass="nav-form" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="CART_ARROW_DOWN" layoutX="14.0" layoutY="115.0" size="70" />
+                                          <Label layoutX="74.0" layoutY="146.0" styleClass="top-text" stylesheets="@../../../dashBoardDesign.css" text="Liczba Zamówień" textFill="WHITE" />
+                                          <Label fx:id="orderNumber" alignment="TOP_RIGHT" layoutX="111.0" layoutY="72.0" prefHeight="17.0" prefWidth="155.0" styleClass="numbers" stylesheets="@../../../dashBoardDesign.css" text="0" textFill="WHITE" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="345.0" layoutY="10.0" prefHeight="180.0" prefWidth="280.0" styleClass="nav-form" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="115.0" size="70" />
+                                          <Label layoutX="80.0" layoutY="146.0" styleClass="top-text" stylesheets="@../../../dashBoardDesign.css" text="Liczba Klientów" textFill="WHITE" />
+                                          <Label fx:id="customerNumber" alignment="TOP_RIGHT" layoutX="111.0" layoutY="72.0" prefHeight="17.0" prefWidth="155.0" styleClass="numbers" stylesheets="@../../../dashBoardDesign.css" text="0" textFill="WHITE">
+                                             <font>
+                                                <Font size="33.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="15.0" layoutY="233.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="350.0" prefWidth="970.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                 <styleClass>
+                                    <String fx:value="white-bg" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                                 <children>
+                                    <AreaChart fx:id="incomeChart" layoutX="24.0" layoutY="51.0" prefHeight="285.0" prefWidth="922.0">
+                                      <xAxis>
+                                        <CategoryAxis side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis side="LEFT" />
+                                      </yAxis>
+                                    </AreaChart>
+                                    <Label layoutX="351.0" layoutY="15.0" styleClass="dochody" stylesheets="@../../../dashBoardDesign.css" text="Wykres Dochodów" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="itemsPane" prefHeight="600.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="570.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="produkty_nazwaProduktuLabel" layoutX="15.0" layoutY="29.0" prefHeight="30.0" prefWidth="175.0" promptText="Nazwa Produktu" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="updateBtn" layoutX="15.0" layoutY="410.0" mnemonicParsing="false" onAction="#produktyUpdate" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Zaktualizuj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="clearBtn" layoutX="15.0" layoutY="465.0" mnemonicParsing="false" onAction="#produktyClear" prefHeight="45.0" prefWidth="95.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Wyczyść" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="deleteBtn" layoutX="15.0" layoutY="520.0" mnemonicParsing="false" onAction="#produktyDelete" prefHeight="45.0" prefWidth="126.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Usuń" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="produkty_addBtn" layoutX="15.0" layoutY="355.0" mnemonicParsing="false" onAction="#produktyAdd" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Dodaj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="produkty_nazwaProducentaLabel" layoutX="15.0" layoutY="79.0" prefHeight="30.0" prefWidth="175.0" promptText="Nazwa Producenta" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="produkty_cenaLabel" layoutX="15.0" layoutY="129.0" prefHeight="30.0" prefWidth="175.0" promptText="Cena w PLN" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="produkty_QuantityLabel" layoutX="15.0" layoutY="179.0" prefHeight="30.0" prefWidth="175.0" promptText="Dostępne Sztuki" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Label layoutX="15.0" layoutY="264.0" stylesheets="@../../../loginDesign.css" text="Wybierz Datę Produkcji:" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="214.0" stylesheets="@../../../loginDesign.css" text="Wybierz Kategorię" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="164.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Liczbę Sztuk" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="114.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Cenę" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="64.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nazwę Producenta" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="14.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nazwę Produktu" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="produkty_kategoriaBox" layoutX="15.0" layoutY="229.0" prefHeight="30.0" prefWidth="170.0" promptText="Kategoria Produktu" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></ComboBox>
+                                    <DatePicker fx:id="produkty_datePicker" editable="false" layoutX="15.0" layoutY="279.0" prefHeight="30.0" prefWidth="170.0" promptText="Data Produkcji" stylesheets="@../../../loginDesign.css">
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                    </DatePicker>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="580.0" prefWidth="765.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="produkty_searchField" layoutX="12.0" layoutY="15.0" prefHeight="25.0" prefWidth="746.0" promptText="Wyszukaj" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="31.0" />
+                                    <TableView fx:id="produkty_ProduktyTableView" layoutX="10.0" layoutY="46.0" onMouseClicked="#addItemsSelect" prefHeight="520.0" prefWidth="745.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                      <columns>
+                                        <TableColumn fx:id="produkty_idProdutku" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="produkty_NazwaProduktu" prefWidth="122.0" text="Nazwa Produktu" />
+                                          <TableColumn fx:id="produkty_Producent" prefWidth="111.0" text="Producent" />
+                                          <TableColumn fx:id="produkty_Cena" prefWidth="92.0" text="Cena" />
+                                          <TableColumn fx:id="produkty_Dostepnosc" prefWidth="116.0" text="Dostępność" />
+                                          <TableColumn fx:id="produkty_Kategoria" prefWidth="101.0" text="Kategoria" />
+                                          <TableColumn fx:id="produkty_DataProdukcji" prefWidth="127.0" text="Data Produkcji" />
+                                      </columns>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="customerPane" prefHeight="600.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="294.0" layoutY="-262.0" prefHeight="580.0" prefWidth="765.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="31.0" />
+                                    <TableView fx:id="klienci_tableView" layoutX="10.0" layoutY="53.0" onMouseClicked="#klienciSelect" prefHeight="520.0" prefWidth="745.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <columns>
+                                          <TableColumn fx:id="klienci_idColumn" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="klienci_imieCloumn" prefWidth="122.0" text="Imię" />
+                                          <TableColumn fx:id="klienci_nazwiskoColumn" prefWidth="108.0" text="Nazwisko" />
+                                          <TableColumn fx:id="klienci_mailColumn" prefWidth="165.0" text="E-mail" />
+                                          <TableColumn fx:id="klienci_telColumn" prefWidth="106.0" text="Nr.Telefonu" />
+                                          <TableColumn fx:id="klienci_dateColumn" prefWidth="167.0" text="Data założenia konta" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField fx:id="klienci_searchField" layoutX="10.0" layoutY="15.0" prefHeight="25.0" prefWidth="746.0" promptText="Wyszukaj" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="14.0" prefHeight="580.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="klienci_imieTex" layoutX="15.0" layoutY="29.0" prefHeight="30.0" prefWidth="175.0" promptText="Imię Klienta" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="klienci_updateBtn" layoutX="15.0" layoutY="380.0" mnemonicParsing="false" onMouseClicked="#klienciUpdate" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Zaktualizuj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="klienci_clearBtn" layoutX="15.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#klienciClear" prefHeight="45.0" prefWidth="95.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Wyczyść" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button fx:id="klienci_deleteBtn" layoutX="15.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#klienciDelete" prefHeight="45.0" prefWidth="126.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Usuń" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="klienci_nazwiskoText" layoutX="15.0" layoutY="89.0" prefHeight="30.0" prefWidth="175.0" promptText="Nazwisko Klienta" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="klienci_mailText" layoutX="15.0" layoutY="149.0" prefHeight="30.0" prefWidth="175.0" promptText="E-mail Klienta" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="klienci_telText" layoutX="15.0" layoutY="209.0" prefHeight="30.0" prefWidth="175.0" promptText="nr.telefonu klienta (+48)" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Label layoutX="15.0" layoutY="194.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nr.Telefonu Klienta" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="134.0" stylesheets="@../../../loginDesign.css" text="Wprowadz Adres Mailowy Klienta" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="74.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nazwisko Klienta" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="14.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Imię Klienta" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="orderPane" prefHeight="600.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="580.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="zamowienia_kodPocztowyTextField" layoutX="15.0" layoutY="79.0" prefHeight="30.0" prefWidth="175.0" promptText="Kod Pocztowy (00-000)" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="466.0" mnemonicParsing="false" onMouseClicked="#zamowieniaUpdate" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Zaktualizuj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="521.0" mnemonicParsing="false" onMouseClicked="#zamowieniaClear" prefHeight="45.0" prefWidth="95.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Wyczyść" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="411.0" mnemonicParsing="false" onMouseClicked="#zamowieniaDelete" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Usuń" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="zamowienia_miastoTextField" layoutX="15.0" layoutY="129.0" prefHeight="30.0" prefWidth="175.0" promptText="Miasto" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="zamowienia_nrMieszkaniaTextField" layoutX="15.0" layoutY="279.0" prefHeight="30.0" prefWidth="175.0" promptText="Numer Mieszkania" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="zamowienia_ulicaTextField" layoutX="15.0" layoutY="179.0" prefHeight="30.0" prefWidth="175.0" promptText="Ulica" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="zamowienia_nrBudynkuTextField" layoutX="15.0" layoutY="229.0" prefHeight="30.0" prefWidth="175.0" promptText="Numer Budynku" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Label layoutX="15.0" layoutY="264.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Numer Mieszkania" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="214.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nr. Budynku" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="164.0" stylesheets="@../../../loginDesign.css" text="Wprowadz Ulice" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="114.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Miasto" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="64.0" stylesheets="@../../../loginDesign.css" text="Wprowadź  Kod Pocztowy" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="314.0" stylesheets="@../../../loginDesign.css" text="Wybierz Status Zamówienia" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="zamowienia_statusComboBox" layoutX="15.0" layoutY="329.0" prefHeight="30.0" prefWidth="170.0" promptText="Status Zamówienia" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></ComboBox>
+                                    <Label layoutX="15.0" layoutY="14.0" stylesheets="@../../../loginDesign.css" text="Wybierz  Date Dostawy" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="zamowienia_datePicker" editable="false" layoutX="15.0" layoutY="29.0" prefHeight="30.0" prefWidth="170.0" promptText="Data Dostawy" stylesheets="@../../../loginDesign.css">
+                                       <cursor>
+                                          <Cursor fx:constant="DEFAULT" />
+                                       </cursor>
+                                    </DatePicker>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="221.0" layoutY="10.0" prefHeight="580.0" prefWidth="765.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="31.0" />
+                                    <TableView fx:id="zamowienia_tableView" layoutX="10.0" layoutY="10.0" onMouseClicked="#zamowieniaSelect" prefHeight="215.0" prefWidth="745.0" AnchorPane.bottomAnchor="315.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <columns>
+                                          <TableColumn fx:id="zamowienia_idZamowieniaColumn" prefWidth="99.0" text="ID Zamówienia" />
+                                          <TableColumn fx:id="zamowienia_idKlientaColumn" prefWidth="98.0" text="ID klienta" />
+                                          <TableColumn fx:id="zamowienia_imieColumn" prefWidth="108.0" text="Imie Klienta" />
+                                          <TableColumn fx:id="zamowienia_nazwiskoColumn" prefWidth="165.0" text="Nazwisko Klienta" />
+                                          <TableColumn fx:id="zamowienia_mailColumn" prefWidth="106.0" text="Adres Mailowy" />
+                                          <TableColumn fx:id="zamowienia_telColumn" prefWidth="167.0" text="Numer Telefonu" />
+                                          <TableColumn fx:id="zamowienia_kodPocztowyColumn" prefWidth="167.0" text="Kod-Pocztowy" />
+                                          <TableColumn fx:id="zamowienia_miastoColumn" prefWidth="167.0" text="Miasto" />
+                                          <TableColumn fx:id="zamowienia_ulicaColumn" prefWidth="167.0" text="Ulica" />
+                                          <TableColumn fx:id="zamowienia_nrBudynkuColumn" prefWidth="167.0" text="Numer Budynku" />
+                                          <TableColumn fx:id="zamowienia_nrMieszkaniaColumn" prefWidth="167.0" text="Numer Mieszkania" />
+                                          <TableColumn fx:id="zamowienia_statusColumn" prefWidth="167.0" text="Status Zamówienia" />
+                                          <TableColumn fx:id="zamowienia_dataZlozeniaColumn" prefWidth="167.0" text="Data Złożenia Zamówienia" />
+                                          <TableColumn fx:id="zamowienia_dataDostawyColumn" prefWidth="167.0" text="Data Dostawy" />
+                                          <TableColumn fx:id="zamowienia_sposobDostawyColumn" prefWidth="167.0" text="Sposób Dostawy" />
+                                          <TableColumn fx:id="zamowienia_cenaColumn" prefWidth="167.0" text="Cena Zamówienia" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField fx:id="zamowienia_searchField" layoutX="10.0" layoutY="15.0" prefHeight="25.0" prefWidth="745.0" promptText="Wyszukaj" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" />
+                                    <TableView fx:id="zamowienia_ZawartoscTableView" layoutX="10.0" layoutY="316.0" prefHeight="250.0" prefWidth="745.0">
+                                       <columns>
+                                          <TableColumn fx:id="zamowienia_idProduktu" prefWidth="98.0" text="ID Produktu" />
+                                          <TableColumn fx:id="zamowienia_nazwaProduktu" prefWidth="108.0" text="Nazwa Produktu" />
+                                          <TableColumn fx:id="zamowienia_producentProduktu" prefWidth="165.0" text="Producent" />
+                                          <TableColumn fx:id="zamowienia_kategoriaProduktu" prefWidth="106.0" text="Kategoria" />
+                                          <TableColumn fx:id="zamowienia_iloscProduktu" prefWidth="167.0" text="Liczba Sztuk" />
+                                          <TableColumn fx:id="zamowienia_cenaProduktu" prefWidth="167.0" text="Cena w dniu zamówienia" />
+                                       </columns>
+                                    </TableView>
+                                    <TextField fx:id="zamowienia_szczegolySearchField" layoutX="10.0" layoutY="278.0" prefHeight="25.0" prefWidth="745.0" promptText="Wyszukaj w zawartości zamówienia" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" />
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="294.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="employePane" prefHeight="600.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="580.0" prefWidth="765.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="pracownicy_search" layoutX="12.0" layoutY="15.0" prefHeight="25.0" prefWidth="746.0" promptText="Wyszukaj" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="31.0" />
+                                    <TableView fx:id="pracownicy_tableView" layoutX="10.0" layoutY="50.0" onMouseClicked="#pracownicySelect" prefHeight="520.0" prefWidth="745.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <columns>
+                                          <TableColumn fx:id="pracownicy_idColumn" prefWidth="75.0" text="ID" />
+                                          <TableColumn fx:id="pracownicy_imieColumn" prefWidth="122.0" text="Imię" />
+                                          <TableColumn fx:id="pracownicy_nazwiskoColumn" prefWidth="111.0" text="Nazwisko" />
+                                          <TableColumn fx:id="pracownicy_telColumn" prefWidth="92.0" text="Nr.Telefonu" />
+                                          <TableColumn fx:id="pracownicy_mailColumn" prefWidth="116.0" text="E-Mail" />
+                                          <TableColumn fx:id="pracownicy_stanowiskoColumn" prefWidth="101.0" text="Stanowisko" />
+                                          <TableColumn fx:id="pracownicy_zarobkiColumn" prefWidth="127.0" text="Zarobki" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="570.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <Button layoutX="15.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#pracownicyUpdate" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Zaktualizuj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="pracownicy_imiePracownika" layoutX="12.0" layoutY="29.0" prefHeight="30.0" prefWidth="175.0" promptText="Imię Pracownika" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" />
+                                    <Button layoutX="15.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#pracownicyClear" prefHeight="45.0" prefWidth="95.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Wyczyść" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#pracownicyDelete" prefHeight="45.0" prefWidth="126.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Usuń" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#pracownicyAdd" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Dodaj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="pracownicy_nazwiskoPracownika" layoutX="12.0" layoutY="79.0" prefHeight="30.0" prefWidth="175.0" promptText="Nazwisko Pracownika" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" />
+                                    <TextField fx:id="pracownicy_zarobkiPracownika" layoutX="12.0" layoutY="279.0" prefHeight="30.0" prefWidth="175.0" promptText="Zarobki w PLN" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" />
+                                    <TextField fx:id="pracownicy_telPracownika" layoutX="12.0" layoutY="129.0" prefHeight="30.0" prefWidth="175.0" promptText="Numer Telefonu" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" />
+                                    <TextField fx:id="pracownicy_mailPracownika" layoutX="12.0" layoutY="179.0" prefHeight="30.0" prefWidth="175.0" promptText="Adres E-Mail Pracownika" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0" />
+                                    <Label layoutX="12.0" layoutY="264.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Zarobki Pracownika" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="214.0" stylesheets="@../../../loginDesign.css" text="Wybierz Stanowisko Pracownika" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="164.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Adres Mailowy" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="114.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Numer Telefonu" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="64.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Nazwisko Pracownika" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="12.0" layoutY="14.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Imię Pracownika" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <ComboBox fx:id="pracownicy_stanowiskoPracownika" layoutX="12.0" layoutY="229.0" prefHeight="30.0" prefWidth="170.0" promptText="Stanowisko" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="18.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></ComboBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="discountPane" prefHeight="600.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="580.0" prefWidth="765.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <TextField fx:id="rabaty_search" layoutX="12.0" layoutY="15.0" prefHeight="25.0" prefWidth="746.0" promptText="Wyszukaj" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                    <FontAwesomeIconView glyphName="SEARCH" layoutX="739.0" layoutY="31.0" />
+                                    <TableView fx:id="rabaty_tableView" layoutX="10.0" layoutY="50.0" onMouseClicked="#rabatySelect" prefHeight="520.0" prefWidth="745.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                       <columns>
+                                          <TableColumn fx:id="rabaty_idColumn" prefWidth="226.0" text="ID" />
+                                          <TableColumn fx:id="rabaty_kodColumn" prefWidth="254.0" text="Kod" />
+                                          <TableColumn fx:id="rabaty_znizkaColumn" prefWidth="263.0" text="Zniżka" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="570.0" prefWidth="200.0" stylesheets="@../../../dashBoardDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <styleClass>
+                                    <String fx:value="shadow" />
+                                    <String fx:value="white-bg" />
+                                 </styleClass>
+                                 <children>
+                                    <Button layoutX="15.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#rabatyUpdate" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Zaktualizuj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="rabaty_kodRabatu" layoutX="15.0" layoutY="79.0" prefHeight="30.0" prefWidth="175.0" promptText="Kod Rabatu" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#rabatyClear" prefHeight="45.0" prefWidth="95.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Wyczyść" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="520.0" mnemonicParsing="false" onMouseClicked="#rabatyDelete" prefHeight="45.0" prefWidth="126.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Usuń" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Button layoutX="15.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#rabatyAdd" prefHeight="45.0" prefWidth="80.0" styleClass="login-btn" stylesheets="@../../../loginDesign.css" text="Dodaj" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <TextField fx:id="rabaty_znizka" layoutX="15.0" layoutY="129.0" prefHeight="30.0" prefWidth="175.0" promptText="Zniżka" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                    <Label layoutX="15.0" layoutY="114.0" stylesheets="@../../../loginDesign.css" text="Wprowadź zniżkę" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="64.0" stylesheets="@../../../loginDesign.css" text="Wprowadź Kod Rabatu" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="15.0" layoutY="14.0" stylesheets="@../../../loginDesign.css" text="Wprowadź ID Rabatu" textFill="#656161">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="rabaty_idRabatu" layoutX="15.0" layoutY="29.0" prefHeight="30.0" prefWidth="175.0" promptText="ID Rabatu" styleClass="textfield" stylesheets="@../../../dashBoardDesign.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

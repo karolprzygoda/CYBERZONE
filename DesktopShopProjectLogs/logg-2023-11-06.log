@@ -1,0 +1,17 @@
+20:48:48.541 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+20:49:06.537 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 6 zalogowal sie
+20:49:10.564 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+20:50:36.693 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+20:50:47.531 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Uzytkownik o ID: 6 zalogowal sie
+20:50:49.551 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.ClientDashBoardController - Aplikacja została zamknieta
+20:59:08.628 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+20:59:19.606 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+20:59:32.747 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Aplikacja zostala zamknieta
+21:23:27.842 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+21:23:32.173 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Aplikacja zostala zamknieta
+21:37:00.181 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+21:37:25.259 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+21:37:46.199 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Aplikacja zostala zamknieta
+21:38:10.875 [main] INFO  com.example.dekstopshopproject.DesktopShopProject - Uruchomiono aplikację
+21:38:30.240 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.LoginController - Administrotr o ID: 1 zalogowal sie
+21:57:37.059 [JavaFX Application Thread] INFO  com.example.dekstopshopproject.DashBoardController - Aplikacja zostala zamknieta
